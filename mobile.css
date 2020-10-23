@@ -1,0 +1,114 @@
+/* CONTENT TABLE *
+  1-Positioning
+  2.- Box Model
+  3.-Typography
+  4.-Visuals
+  5.-Others
+
+*/
+/* VAriables */
+:root{
+    --font-sans:'DM Sans', sans-serif;
+    --font-inter:'Inter', sans-serif;
+    --size-300:300;
+    --size-400:400;
+    --size-500:500;
+    --size-700:700;
+    --background:#E5E5E5;
+    --linear-gradient:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --bitcoin-orage:#F7931A;
+    --soft-orange:#FFE9D5;
+    --secondary-blue:#FFE9D5;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-blackplus1:#282623;
+    --gray:#BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+    font-family: "DM Sans";
+    /* color:var(--just-white); */
+    color:var(--off-white);
+}
+
+header{
+  position: relative;
+  width: 100%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 320px;
+  height: 334px;
+  /* background-color: var(--linear-gradient); */
+  background: var(--linear-gradient);
+}
+
+header img{
+  width: 158px;
+  height: 24px;
+  margin-top: 60px;
+}
+
+.header__title-container{
+  font-size: 0.8rem;
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin-top: 50px;
+}
+
+.header__title-container h1{
+  font-size:2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.header__title-container p{
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+
+.header__title-container .header__button{
+  position: absolute;
+  top: 280px;
+  left: calc(50% - 118px);
+  line-height: 10px;
+  width: 229px;
+  height: 44px;
+  display: block;
+
+  padding: 15px;
+  margin-top: 35px;
+
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+  border:none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+}
+
+.header__title-container span{
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("./assets/icons/tog-arrow.png");
+}
