@@ -25,6 +25,7 @@
     --gray:#BABABA;
     --off-white:#FAF8F7;
     --just-white:#FFFFFF;
+    --black:#000000;
 }
 
 * {
@@ -36,7 +37,7 @@ html{
     font-size:62.5%;
     font-family: "DM Sans";
     /* color:var(--just-white); */
-    color:var(--off-white);
+    color:var(--black);
 }
 
 header{
@@ -61,11 +62,11 @@ header img{
 }
 
 .header__title-container{
-  font-size: 0.8rem;
   width: 90%;
   min-width: 288px;
   max-width: 900px;
   margin-top: 50px;
+  font-size: 0.8rem;
 }
 
 .header__title-container h1{
@@ -85,7 +86,7 @@ header img{
 
 .header__title-container .header__button{
   position: absolute;
-  top: 280px;
+  top: 275px;
   left: calc(50% - 118px);
   line-height: 10px;
   width: 229px;
@@ -111,4 +112,55 @@ header img{
   height: 8px;
   margin-left: 10px;
   background-image: url("./assets/icons/tog-arrow.png");
+}
+
+
+/*  */
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+.main-exchange-container{
+  width: 100%;
+  height:auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-exchange-container__title{
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-exchange-container .bgImg{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  background-image: url("./assets/imgs/bitcoin.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.main-exchange-container h2{
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color:var(--black);
+}
+
+.main-exchange-container p{
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
 }
